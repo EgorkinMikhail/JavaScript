@@ -32,6 +32,26 @@ for (let i = 0; i < 2; i++) {
 
 };
 
+// let i = 0;
+// while (i < 2) {
+//     i++;
+
+//     let itemOfExpence = prompt("Введите обязательную статью расходов в этом месяце",''),
+//     itemSpent     = +prompt("Во сколько обойдется?",'');
+
+//     if (typeof(itemOfExpence)==='string' && typeof(itemOfExpence) != null && typeof(itemSpent) != null
+//         && itemOfExpence != '' && itemSpent != '' && itemOfExpence.length < 50 && itemSpent != NaN ) {
+
+//     appData.expenses[itemOfExpence] = itemSpent;
+//     }
+//     else {
+//         alert("One of input values are wrong, please, repeat enter");
+//         i--;
+//     } 
+// }
+
+
+
 appData.moneyPerDay = appData.bugetInMonth / 30;
 
 alert("Daily buget: " + appData.moneyPerDay);
