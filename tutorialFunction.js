@@ -40,3 +40,14 @@ let twelve = "12.2";
 //console.log(Math.round(twelve));
 console.log(parseInt(twelve));
 console.log(parseFloat(twelve));
+
+function testCall(messageTest1, callback) {
+    console.log(messageTest1);
+    callback();
+}
+
+function doTestCall() {
+    console.log("This is true");
+}
+
+testCall("Testing", doTestCall);
