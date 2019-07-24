@@ -98,10 +98,13 @@ checkSavings();
 
 function chooseOptExpenses() {
     for (let i = 1; i < 4; i++) {
-        let optionalExpensesValue = prompt("Enter optional expenses:");
+        let optionalExpensesValue = +prompt("Enter optional expenses:");
         
         if (optionalExpensesValue != null && optionalExpensesValue != "") {
             appData.optionalExpenses[i] = optionalExpensesValue;
+        } else {
+            alert("Error! One of input values are wrong, please, repeat enter");
+            i--;
         }
 
     }
