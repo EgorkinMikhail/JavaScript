@@ -51,3 +51,26 @@ function doTestCall() {
 }
 
 testCall("Testing", doTestCall);
+
+
+let options = {
+    height:1024,
+    wight:2048,
+    name: "test 3"
+};
+
+options.fill = true;
+
+delete options.fill;
+
+options.color = {
+    border : "red",
+    line : "green",
+    bg : "white"
+};
+
+console.log(options);
+
+for (let key in options) {
+    console.log('property ' + key + ' = ' + options[key]);
+};
