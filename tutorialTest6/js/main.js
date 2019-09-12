@@ -12,7 +12,7 @@ let btnStart = document.getElementById("start"),
 
 let expensesItems = document.getElementsByClassName("expenses-item"),
     expensesItemBtn = document.getElementsByTagName("button")[0],
-    optionalExpBtn = document.getElementsByTagNameNS("button")[1],
+    optionalExpBtn = document.getElementsByTagName("button")[1],
     countBtn = document.getElementsByTagName("button")[2],
     optionalExpItems = document.querySelectorAll(".optionalexpenses-item"),
     incomeItem = document.querySelector('.choose-income'),
@@ -43,7 +43,7 @@ function start() {
 // let money = +prompt("Ваш бюджет на месяц", "0");
 // let time = prompt("Введите дату в формате YYYY-MM-DD", "1900-01-01");
 
-start();
+//start();
 
 let appData = {
     bugetInMonth: money,
@@ -132,3 +132,6 @@ let appData = {
     }
 
 };
+
+
+
