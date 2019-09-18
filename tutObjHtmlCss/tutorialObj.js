@@ -60,3 +60,40 @@ document.body.removeChild(crcl[1]);
 wrapper.removeChild(heart[1]);
 
 document.body.replaceChild(btn[1], crcl[1]);
+
+
+///
+
+let btn1 = document.getElementsByTagName('button')[0];
+console.log(btn1);
+console.log(oneHeart);
+
+function myAnimation() {
+    let position = 0;
+
+    let id = setInterval(frame, 10);
+
+    function frame() {
+        if (position == 300) {
+            clearInterval(id);
+        } else {
+            position++;
+            oneHeart.style.top = position + 'px';
+            oneHeart.style.left = position + 'px';
+            console.log(position);
+        }
+    }
+
+}
+
+div.addEventListener('click', myAnimation);
+
+// btn.addEventListener('click', function(event) {
+//     if (event.target && event.target.classList.contains('first')) {
+//         console.log('1st variant');
+//     }
+
+//     if (event.target && event.target.matches('button.first')) {
+//         console.log('2nd variant');
+//     }
+// });
